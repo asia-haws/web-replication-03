@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asia's Log In</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Learn More</a>
+    </nav>
+    <form action="https://httpbin.org/post" method="POST">
+      <div class="login-container">
+        <img src="images/login-hero.jpg" alt="login-logo" class="hero-image" />
+        <div class="login">
+          <div class="header">
+            <h1>
+              Welcome Friend!
+              <i class="fa-regular fa-circle-user user-icon"></i>
+            </h1>
+            <p>We are so glad to have you back!</p>
+            <h2>
+              Sign Into Your Account <i class="fa-solid fa-key key-icon"></i>
+            </h2>
+          </div>
+          <label for="username-input">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="user-name"
+            class="login-input"
+            required
+          />
+          <label for="password-input">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="user-password"
+            class="login-input"
+            required
+          />
+
+          <input type="submit" value="Log In" class="submit-button" />
+
+          <p class="forgot">Forgot Password?</p>
+          <p>New Here? <span> Register Now</span></p>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
